@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dce3f1;
+	font-family: 'Esteban', sans-serif;
+	color: white;
+	transition: color 1s;
+}
+html,
+body {
+	height: 100%;
+}
+
+.title {
+	font-family: 'Montserrat';
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.toggles {
+	position: fixed;
+	width: 100vw;
+	height: 100%;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.overlay-toggle {
+	width: 72px;
+	fill: white;
+	transition: all 0.3s;
+}
+@media (max-width: 760px) {
+	.overlay-toggle {
+		width: 36px;
+	}
+}
+
+.overlay-toggle.up {
+	margin-top: 20px;
+}
+.overlay-toggle.down {
+	margin-bottom: 20px;
+}
+
+.content {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide {
+	position: absolute;
+	transform: translateY(-1000px);
+	opacity: 0;
+	transition: all 0.6s;
+	width: 60%;
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+@media (max-width: 760px) {
+	.slide {
+		font-size: 1em;
+	}
+}
+
+.slide.current {
+	display: block;
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.overlay.is-opened {
+}
+
+.path:nth-of-type(1) {
+	fill: #dce3f1;
+}
+
+.path:nth-of-type(2) {
+	fill: #869ccc;
+}
+
+.path:nth-of-type(3) {
+	fill: #30436f;
+}
+
+.path:nth-of-type(4) {
+	fill: #0d1831;
+}
