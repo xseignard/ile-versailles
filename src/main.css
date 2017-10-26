@@ -32,6 +32,11 @@ body {
 	width: 72px;
 	fill: white;
 	transition: all 0.3s;
+	cursor: pointer;
+	filter: drop-shadow(5px 5px 5px #000);
+}
+.overlay-toggle:hover {
+	fill: #ccc;
 }
 @media (max-width: 760px) {
 	.overlay-toggle {
@@ -83,9 +88,6 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-}
-
-.overlay.is-opened {
 }
 
 .path:nth-of-type(1) {

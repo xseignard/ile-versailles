@@ -17,10 +17,10 @@ class Overlay {
 	}
 	toggle() {
 		this.isAnimating = true;
-		const range = Math.random() * Math.PI * 2;
+		const anglePerPoint = 360 / this.numPoints * Math.PI / 180;
 		for (let i = 0; i < this.numPoints; i++) {
-			const radian = i / (this.numPoints - 1) * Math.PI * 2;
-			this.delayPointsArray[i] = (Math.sin(radian + range) + 1) / 2 * this.delayPointsMax;
+			this.delayPointsArray[i] = Math.random() * this.delayPointsMax * 2;
+			console.log(Math.sin(anglePerPoint * i));
 		}
 		if (this.isOpened === false) this.open();
 		else this.close();
