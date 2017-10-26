@@ -2,6 +2,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #dce3f1;
+	background-position-x: center;
+	background-position-y: center;
+	background-attachment: fixed;
 	font-family: 'Esteban', sans-serif;
 	color: white;
 	transition: color 1s;
