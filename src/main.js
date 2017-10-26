@@ -56,15 +56,15 @@ window.addEventListener('wheel', e => {
 	if (e.deltaY > 80) toggleDown();
 	else if (e.deltaY < -80) toggleUp();
 });
-let start;
-let end;
-window.addEventListener('touchstart', e => {
-	start = e.touches[0].clientY;
-});
-window.addEventListener('touchmove', e => {
-	end = e.touches[0].clientY;
-});
-window.addEventListener('touchend', e => {
-	if (start > end + 15) toggleUp();
-	else if (start < end - 15) toggleDown();
-});
+// let start;
+// let end;
+// window.addEventListener('touchstart', e => {
+// 	start = e.touches[0].clientY;
+// });
+// window.addEventListener('touchmove', e => {
+// 	end = e.touches[0].clientY;
+// });
+// window.addEventListener('touchend', e => {
+// 	if (start > end + 15) toggleUp();
+// 	else if (start < end - 15) toggleDown();
+// });
