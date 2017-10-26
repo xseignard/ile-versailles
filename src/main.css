@@ -2,8 +2,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #dce3f1;
-	background-position-x: center;
-	background-position-y: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family: 'Esteban', sans-serif;
 	color: white;
@@ -69,7 +70,7 @@ body {
 	position: absolute;
 	transform: translateY(-1000px);
 	opacity: 0;
-	transition: all 0.6s;
+	transition: all 0.6s 1s;
 	width: 60%;
 	font-size: 1.5em;
 	line-height: 1.4em;

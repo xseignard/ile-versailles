@@ -18,14 +18,9 @@ const overlayElement = document.querySelector('.overlay');
 const overlay = new Overlay(overlayElement);
 
 document.body.style.backgroundImage = `url(${img1})`;
-document.body.style.backgroundSize = 'cover';
 
 const setBackground = index => {
-	if (index !== 0) {
-		document.body.style.backgroundColor = 'unset';
-		document.body.style.backgroundImage = `url(${images[index - 1]})`;
-		document.body.style.backgroundSize = 'cover';
-	}
+	if (index !== 0) document.body.style.backgroundImage = `url(${images[index - 1]})`;
 };
 
 const toggleUp = () => {
